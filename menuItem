@@ -1,0 +1,16 @@
+package com.example.menu.model;
+
+import java.util.List;
+
+public class MenuItem {
+    private String title;
+    private List<MenuItem> subItems;
+
+    public MenuItem(String title, List<MenuItem> subItems) {
+        this.title = title;
+        this.subItems = subItems;
+    }
+
+    public String getTitle() { return title; }
+    public List<MenuItem> getSubItems() { return subItems; }
+}
