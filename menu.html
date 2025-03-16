@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Menu Expansível</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .menu { width: 300px; }
+        .menu-item { background: #333; color: white; padding: 10px; cursor: pointer; margin-bottom: 5px; }
+        .menu-item:hover { background: #555; }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div th:each="item : ${menuItems}" class="menu-item">
+            <span th:text="${item.title}"></span>
+        </div>
+    </div>
+</body>
+</html>
